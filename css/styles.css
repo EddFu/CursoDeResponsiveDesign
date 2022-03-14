@@ -8,7 +8,6 @@
 
 :root {
     /* Colores */
-
     --bitcoin-orange: #F7931A;
     --soft-orange: #FFE9D5;
     --secondary-blue: #1A9AF7;
@@ -18,7 +17,6 @@
     --grey: #BABABA;
     --off-white: #FAF8F7;
     --just-white: #FFF;
-
 }
 
 
@@ -106,3 +104,279 @@ header img {
     background-image: url("../assets/icons/down-arrow.svg");
 }
 
+/* main */
+
+.main {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-exchange-container .background-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url("../assets/img/bitcoin.svg");
+    /* para que la imagen no se deforme */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-exchange-container--title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-exchange-container h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.main-exchange-container p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+
+/* Grid prices */
+
+.coins--section {
+    max-width: 500px;
+    min-width: 235px;
+    width: 70%;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    
+}
+
+.coins--section2 {
+    display: none;
+    max-width: 500px;
+    min-width: 235px;
+    width: 70%;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    
+}
+
+.coins--section .coins--section--title {
+    margin-left: 20px;
+    display: flex;
+    margin-bottom: 15px;
+    color: var(--bitcoin-orange);
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+}
+
+.coins--section2 .coins--section--title2 {
+    margin-left: 20px;
+    display: flex;
+    margin-bottom: 15px;
+    color: var(--secondary-blue);
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+}
+
+.grid--coins--section--table {
+    min-width: 230px;
+    max-width: 300px;
+    width: 90%;
+    height: 220px;
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(4, 50px);
+    gap: 3px;
+    grid-template-areas: "coin1 price1"
+                        "coin2 price2"
+                        "coin3 price3"
+                        "coin4 price4";
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+}
+
+.grid--coins--section--table div{
+    padding: 14px;    
+    background: var(--off-white);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+}
+
+.coin1 {
+    grid-area: coin1;
+    border-radius: 15px 0 0 0;
+}
+
+.coin2 {
+    grid-area: coin2;
+}
+
+.coin3 {
+    grid-area: coin3;
+}
+
+.coin4 {
+    grid-area: coin4;
+    border-radius: 0 0 0 15px;
+}
+
+
+.price1 {
+    grid-area: price1;
+    border-radius: 0 15px 0 0;
+}
+
+.price1 span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("../assets/icons/trending-down.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.price2 {
+    grid-area: price2;
+}
+
+.price2 span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("../assets/icons/trending-up.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.price3 {
+    grid-area: price3;
+}
+
+.price3 span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("../assets/icons/trending-down.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.price4 {
+    grid-area: price4;
+    border-radius: 0 0 15px 0;
+}
+
+.price4 span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("../assets/icons/trending-down.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid--coins--section--table .price1,
+.grid--coins--section--table .price2,
+.grid--coins--section--table .price3,
+.grid--coins--section--table .price4 {
+    
+    font-weight: normal;
+    color: #757575;
+    line-height: 1.7rem;
+}
+
+.date-price-orange {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+
+}
+
+.date-price-orange p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    font-weight: 300;
+}
+
+.date-price-blue {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--sof-blue);
+    border-radius: 8px;
+}
+
+.date-price-blue p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    font-weight: 300;
+}
+
+.right__arrow{
+    position: absolute;
+    background-image: url("../assets/icons/right-arrow.svg");
+    width: 20px;
+    height: 20px;
+    right: calc(40% - 100px);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: var(--just-white);
+    cursor: pointer;
+}
+
+.left__arrow{
+    transform: rotate(180deg);
+    position: absolute;
+    background-image: url("../assets/icons/right-arrow.svg");
+    width: 20px;
+    height: 20px;
+    left: calc(40% - 110px);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: var(--just-white);
+    cursor: pointer;
+}
