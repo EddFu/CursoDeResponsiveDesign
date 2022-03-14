@@ -168,6 +168,15 @@ header img {
     
 }
 
+@keyframes section1 {
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
 .coins--section2 {
     display: none;
     max-width: 500px;
@@ -176,7 +185,16 @@ header img {
     height: 360px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
-    
+
+}
+
+@keyframes section2 {
+    0%{
+        transform: translateX(200px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 
 .coins--section .coins--section--title {
