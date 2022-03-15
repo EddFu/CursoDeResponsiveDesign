@@ -159,18 +159,21 @@ header img {
 /* Grid prices */
 
 .coins--section {
+    display: block;
     max-width: 500px;
     min-width: 235px;
     width: 70%;
     height: 360px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
+
+    transform: translateX(0);
     
 }
 
 @keyframes section1 {
     0%{
-        transform: translateX(-200px);
+        transform: translateX(-40px);
     }
     100%{
         transform: translateX(0);
@@ -186,11 +189,13 @@ header img {
     margin: 0 auto;
     font-family: "Inter", sans-serif;
 
+    transform: translateX(0px);
+
 }
 
 @keyframes section2 {
     0%{
-        transform: translateX(200px);
+        transform: translateX(40px);
     }
     100%{
         transform: translateX(0);
