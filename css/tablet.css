@@ -1,0 +1,37 @@
+.coins--section--tablet {
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+}
+
+.coins--section {
+    display: block;
+}
+
+.left__arrow{
+    display: none;
+}
+
+.coins--section2 {
+    display: block;
+}
+
+.right__arrow{
+    display: none;
+}
+
+.product__cards--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+}
+
+.bitcoin__img-container {
+    background-image: url("../assets/img/bitcoinbaby2x.jpg");
+}
+
+.plans__container--slider {
+    justify-content: center;
+    overflow-x: unset;
+}

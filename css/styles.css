@@ -205,8 +205,6 @@ header img {
 }
 
 .coins--section .coins--section--title {
-    margin-left: 20px;
-    display: flex;
     margin-bottom: 15px;
     color: var(--bitcoin-orange);
     font-size: 1.8rem;
@@ -215,8 +213,6 @@ header img {
 }
 
 .coins--section2 .coins--section--title2 {
-    margin-left: 20px;
-    display: flex;
     margin-bottom: 15px;
     color: var(--secondary-blue);
     font-size: 1.8rem;
@@ -530,11 +526,12 @@ header img {
     width: 100%;
     min-width: 320px;
     height: 50vh;
-    background-image: url("../assets/img/bitcoinbaby2x.jpg");
+    background-image: url("../assets/img/bitcoinbaby.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+    background-attachment: fixed;
 }
 
 .bitcoin__img-container h2 {
